@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cartão WTF</title>
+	<style>
+        body {
+        font-family: Calibri;
+        }
+        h1 {
+        font-family: Calibri;
+        color: #ff3399;
+        }
+        h4 {
+        font-family: Calibri;
+        color: #ff3399;
+        }
+        </style>
+</head>
+<body>
+	<h1>Adesão Cartão WTF</h1>
+	<form style="width:70%">
+		<fieldset>
+			<legend><strong>Dados pessoais:</strong></legend>
+			Nome:
+			<input type="text" name="nome" size=100 required>
+			<br><br>
+			Sexo:
+			<input type="radio" name="genero" value="masculino" checked> Masculino
+			<input type="radio" name="genero" value="feminino" selected> Feminino
+			<br><br>
+			Data de Nascimento:
+			<input type="date" name="nascimento">
+			<br><br>
+			Estado Civil:
+			<select name="estadoCivil">
+				<option selected disable hidden>Escolha uma opção</option>
+				<option>Casado</option>
+				<option>Solteiro</option>
+				<option>Divorciado</option>
+				<option>Viúvo</option>
+			</select>
+			Nr de filhos:
+			<input type="number" min="0" max="5" step="1">
+		</fieldset>
+		<br><br>
+		<fieldset>
+			<legend><strong>Contactos:</strong></legend>
+			Código-Postal:<input type="number" placeholder="0000" min=0000 max=9999 title="Insira quatro algarismos para o indicativo.">-<input type="number" placeholder="000" min=000 max=999 title="Insira três algarismos para a extensão.">
+			<br><br>
+			Morada:<br><textarea rows="5" cols="106"></textarea>
+			<br><br>
+			Email: <input type="email" placeholder="ex:alguem@gmail.com">
+			<br><br>
+			Password: <input type="password" name="password">
+		</fieldset>
+		<div align="right">
+		<i>Pretendo ser contactado através de:</i>
+		<input type="checkbox" name="email"> Email
+		<input type="checkbox" name="telemovel"> Telemóvel
+		<input type="checkbox" name="correio"> Correio
+		<br><br>
+		<input type="reset" value="Limpar">
+		<input type="submit" value="Confirmar">
+		</div>
+	</form>
+</body>
+</html>
